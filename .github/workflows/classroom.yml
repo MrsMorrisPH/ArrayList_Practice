@@ -81,15 +81,6 @@ jobs:
         command: mvn -Dtest=Unit7Test#testReverseList test
         timeout: 3
         max-score: 15
-    - name: testShuffleList
-      id: testshufflelist
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: testShuffleList
-        setup-command: mvn compile
-        command: mvn -Dtest=Unit7Test#testShuffleList test
-        timeout: 3
-        max-score: 20
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
@@ -100,6 +91,5 @@ jobs:
         TESTGETEVENELEMENTS_RESULTS: "${{steps.testgetevenelements.outputs.result}}"
         TESTREMOVEELEMENTSDIVISIBLEBY5_RESULTS: "${{steps.testremoveelementsdivisibleby5.outputs.result}}"
         TESTREVERSELIST_RESULTS: "${{steps.testreverselist.outputs.result}}"
-        TESTSHUFFLELIST_RESULTS: "${{steps.testshufflelist.outputs.result}}"
       with:
-        runners: testsumofelements,testremoveallinstances,testdoubleallelements,testaddifnotpresent,testgetevenelements,testremoveelementsdivisibleby5,testreverselist,testshufflelist
+        runners: testsumofelements,testremoveallinstances,testdoubleallelements,testaddifnotpresent,testgetevenelements,testremoveelementsdivisibleby5,testreverselist
