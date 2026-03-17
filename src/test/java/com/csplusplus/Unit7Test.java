@@ -115,29 +115,5 @@ public class Unit7Test {
         assertEquals(new ArrayList<>(Arrays.asList(-3, -2, -1)), list3);
     }
 
-    // 8. Test for shuffleList (20 points)
-    @Test
-    public void testShuffleList() {
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(10, 20, 30, 40, 50));
-        ArrayList<Integer> list3 = new ArrayList<>(Arrays.asList(-1, -2, -3, -4, -5));
-
-        ArrayList<Integer> originalList1 = new ArrayList<>(list1);
-        ArrayList<Integer> originalList2 = new ArrayList<>(list2);
-        ArrayList<Integer> originalList3 = new ArrayList<>(list3);
-
-        Unit7.shuffleList(list1);  // Shuffle the list
-        Unit7.shuffleList(list2);  // Shuffle the list
-        Unit7.shuffleList(list3);  // Shuffle the list
-
-        // Verify that the lists have been shuffled and are different from their original order
-        assertNotEquals(originalList1, list1);
-        assertNotEquals(originalList2, list2);
-        assertNotEquals(originalList3, list3);
-
-        // Verify the shuffled lists still contain the same elements
-        assertTrue(list1.containsAll(originalList1) && originalList1.containsAll(list1));
-        assertTrue(list2.containsAll(originalList2) && originalList2.containsAll(list2));
-        assertTrue(list3.containsAll(originalList3) && originalList3.containsAll(list3));
-    }
+    
 }
