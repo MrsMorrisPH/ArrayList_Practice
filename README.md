@@ -1,10 +1,10 @@
-# Unit 7: ArrayList
+# Topic: ArrayList
 
 AP Computer Science A
 
 ## Overview
 
-This project covers **Unit 7: ArrayList** concepts including ArrayList operations, traversal, element removal, and common algorithms. You may ONLY use `size()`, `add()`, `get()`, `set()`, and `remove()` — no `contains()`, `removeIf()`, or `Collections` class. Implement the 8 methods in `Unit7.java` and run the provided JUnit tests to verify your work.
+This project covers ** ArrayList** concepts including ArrayList operations, traversal, element removal, and common algorithms. You may ONLY use `size()`, `add()`, `get()`, `set()`, and `remove()` — no `contains()`, `removeIf()`, or `Collections` class. Implement the 7 methods in `Unit7.java` and run the provided JUnit tests to verify your work.
 
 ## Getting Started
 
@@ -22,8 +22,7 @@ This project covers **Unit 7: ArrayList** concepts including ArrayList operation
 
 1. Accept the assignment via the GitHub Classroom link
 2. Clone the repository using GitHub Desktop
-3. Open the project in your IDE (VS Code, IntelliJ, or Eclipse)
-4. **Requirements:** Java 17+, Maven 3.x
+3. Open the project in VS Code
 
 ## Running Tests
 
@@ -31,17 +30,7 @@ This project covers **Unit 7: ArrayList** concepts including ArrayList operation
 
 Click the green play button next to any test method in `Unit7Test.java`, or open the **Testing** sidebar (beaker icon).
 
-### Command Line
 
-Run all tests:
-```
-mvn test
-```
-
-Run a single method's tests:
-```
-mvn -Dtest=Unit7Test#testSumOfElements test
-```
 
 ## Scoring
 
@@ -54,8 +43,7 @@ mvn -Dtest=Unit7Test#testSumOfElements test
 | 5 | `getEvenElements(ArrayList)` | 10 | Filtering, creating new list |
 | 6 | `removeElementsDivisibleBy5(ArrayList)` | 15 | Modulo operator, backwards removal |
 | 7 | `reverseList(ArrayList)` | 15 | Swapping elements |
-| 8 | `shuffleList(ArrayList)` | 20 | Fisher-Yates shuffle algorithm |
-| | **Total** | **100** | |
+| | **Total** | **80** | |
 
 ## Important Constraint
 
@@ -69,10 +57,8 @@ You may **only** use these ArrayList methods: `size()`, `add()`, `get()`, `set()
 - Forgetting that `remove(int)` removes by index, not by value
 - Not creating a new ArrayList for methods that should return a new list
 
-## Autograding
+## Submission
+Submit your completed `Unit7.java` file through GitHub Classroom by the due date. Ensure that all tests pass and your code adheres to the style guidelines provided in class.
 
-Your code is automatically graded when you push to GitHub. Check the **Actions** tab to see your score. Each method is tested independently — you earn points for each method you complete correctly.
-
-## Contact
-
-For questions, contact [kevin@csplusplus.com](mailto:kevin@csplusplus.com)
+## Credit
+This repo template was modified from [CS-Plus-Plus] (https://github.com/cs-plus-plus)
