@@ -1,6 +1,4 @@
-# Topic: ArrayList
-
-AP Computer Science A
+# APCSA: ArrayList
 
 ## Overview
 
